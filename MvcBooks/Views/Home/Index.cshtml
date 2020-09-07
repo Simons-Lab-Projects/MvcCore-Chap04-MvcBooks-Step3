@@ -1,0 +1,15 @@
+﻿@using MvcBooks.Models;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <h2>Categories</h2>
+    @foreach (Category cat in ViewBag.Cats)
+    {
+        @string.Format("{0} {1}", cat.CategoryId, cat.Description) <br />
+    }
+</body>
+</html>

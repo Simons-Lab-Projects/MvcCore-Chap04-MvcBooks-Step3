@@ -1,0 +1,15 @@
+﻿@using MvcBooks.Models;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Books</title>
+</head>
+<body>
+    <h2>Books</h2>
+    @foreach (Book bk in ViewBag.Books)
+    {
+        @bk.Title @:- @bk.PubYear <br />
+    }
+</body>
+</html>
